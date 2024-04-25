@@ -227,6 +227,8 @@ class Ball {
                     player2_result.innerText = 'You Win!!!';
                     player1_result.innerText = 'You Lose!!!';
                     playing = 0;
+                    board.ctx.clearRect(0, 0, BOARD_SIZE_WIDTH, BOARD_SIZE_HEIGHT);
+                    board.reset();
                 }
             }
             if (bars.player === player2) {
